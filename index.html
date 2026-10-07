@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>flyspace — Richmond's MySpace</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Verdana, Arial, sans-serif;
+    background: #000 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect fill="%23000" width="100" height="100"/><circle cx="50" cy="50" r="1" fill="%23333"/></svg>') repeat;
+    color: #fff;
+    min-height: 100vh;
+  }
+  .topbar {
+    background: linear-gradient(to bottom, #4a6fa5, #2b4c7e);
+    border-bottom: 3px solid #ff00ff;
+    padding: 8px 16px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .topbar h1 {
+    font-size: 22px; letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff00ff, #00ffff, #ffff00);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    text-shadow: 0 0 10px rgba(255,0,255,0.5);
+  }
+  .topbar .tagline { color: #aaa; font-size: 12px; }
+  .container { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+  .card {
+    background: rgba(20,20,40,0.9);
+    border: 2px solid #ff00ff;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(255,0,255,0.3);
+  }
+  .card h2 { color: #00ffff; margin-bottom: 12px; font-size: 16px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .feature {
+    background: rgba(255,0,255,0.08);
+    border-left: 3px solid #ff00ff;
+    padding: 12px;
+    font-size: 13px;
+  }
+  .feature b { color: #ffff00; }
+  .btn {
+    display: inline-block; margin-top: 16px;
+    padding: 10px 24px;
+    background: linear-gradient(to bottom, #ff00ff, #9900cc);
+    color: #fff; font-weight: bold; text-decoration: none;
+    border-radius: 4px; border: 1px solid #ff66ff;
+    font-size: 14px;
+  }
+  .btn:hover { background: linear-gradient(to bottom, #00ffff, #0099cc); }
+  marquee { color: #ff00ff; font-weight: bold; margin: 12px 0; }
+  .footer { text-align: center; color: #555; font-size: 11px; padding: 24px; }
+  .sparkle { animation: sparkle 1.5s infinite; }
+  @keyframes sparkle { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>✦ flyspace ✦</h1>
+    <span class="tagline">Richmond's digital bedroom wall — since whenever</span>
+  </div>
+  <div class="container">
+    <div class="card">
+      <h2>✦ Welcome to flyspace ✦</h2>
+      <p>The first place your online identity was something you <b>built</b>, not just filled out. Chaotic, loud, covered in glitter GIFs, and completely yours.</p>
+      <marquee behavior="scroll" direction="left">✦ this is my vibe, deal with it ✦ ✦ html was my first language ✦ ✦ top 8 or it didn't happen ✦</marquee>
+      <a class="btn" href="#signup">✦ Create Your Profile ✦</a>
+    </div>
+    <div class="card">
+      <h2>✦ Features ✦</h2>
+      <div class="features">
+        <div class="feature"><b>HTML/CSS customization</b> — rip apart the whole layout. Backgrounds, fonts, cursors, marquee text.</div>
+        <div class="feature"><b>The Top 8</b> — publicly rank your eight best friends. Social drama included free.</div>
+        <div class="feature"><b>Autoplay music</b> — every profile blasts a song the second someone loads your page.</div>
+        <div class="feature"><b>Mood status</b> — tell the world exactly how you're feeling today.</div>
+        <div class="feature"><b>Glitter text comments</b> — because plain text is for people with no soul.</div>
+        <div class="feature"><b>Emerging musicians</b> — the original indie discovery engine. No algorithm, just vibes.</div>
+      </div>
+    </div>
+    <div class="card" id="signup">
+      <h2>✦ Sign Up ✦</h2>
+      <p>Coming soon. In the meantime, go customize something.</p>
+    </div>
+  </div>
+  <div class="footer">✦ flyspace is part of <a href="https://rva.guru" style="color:#00ffff">rva.guru</a> — Richmond's tech hub ✦</div>
+</body>
+</html>
